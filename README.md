@@ -19,7 +19,7 @@ Here is a list of the problems I've solved:
 
 | Problem Number | Problem Name         | Difficulty | Solution Link                       |
 |----------------|----------------------|------------|-------------------------------------|
-| 231            | Power of Two         | Easy       | [Link](./solutions/easy/two_sum.cpp)|
+| 231            | Power of Two         | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Power_of_Two)|
 | 326            | Power of Three       | Easy       | [Link](./solutions/easy/two_sum.cpp)|
 | 342            | Power of Four        | Easy       | [Link](./solutions/easy/two_sum.cpp)|
 

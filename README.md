@@ -23,7 +23,7 @@ Here is a list of the problems I've solved:
 | 326            | Power of Three       | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Power_of_Three)|
 | 342            | Power of Four        | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Power_of_Four)|
 | 509            | Fibonacci Number     | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Fibonacci_Number)|
-| 50             | pow(x, n)            | Medium     | [Link]()|
+| 50             | pow(x, n)            | Medium     | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/pow(x%2Cn))|
 
 
 ## Contributing

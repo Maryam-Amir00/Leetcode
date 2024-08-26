@@ -24,6 +24,7 @@ Here is a list of the problems I've solved:
 | 3          | 342            | Power of Four        | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Power_of_Four)|
 | 4          | 509            | Fibonacci Number     | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Fibonacci_Number)|
 | 5          | 50             | pow(x, n)            | Medium     | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/pow(x%2Cn))|
+| 6          | 344            | Reverse String       | Easy       | [Link]()|
 
 
 ## Contributing

@@ -20,7 +20,7 @@ Here is a list of the problems I've solved:
 
 | No.        | Problem Number | Problem Name                                | Difficulty | Solution Link                       |
 |------------|----------------|---------------------------------------------|------------|-------------------------------------|
-| 1          | 231            | Power of Two                                | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Power_of_Two)|
+| 1          | 231            | Power of Two                                | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Recursion/Power_of_Two.txt)|
 | 2          | 326            | Power of Three                              | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Power_of_Three)|
 | 3          | 342            | Power of Four                               | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Power_of_Four)|
 | 4          | 509            | Fibonacci Number                            | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Fibonacci_Number)|

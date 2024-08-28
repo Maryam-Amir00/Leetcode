@@ -16,7 +16,7 @@ This repository serves as a personal archive of my solutions to these problems.
 
 Here is a list of the problems I've solved:
 
-##Recursion
+## Recursion
 
 | No.        | Problem Number | Problem Name                                | Difficulty | Solution Link                       |
 |------------|----------------|---------------------------------------------|------------|-------------------------------------|
@@ -27,13 +27,13 @@ Here is a list of the problems I've solved:
 | 5          | 50             | pow(x, n)                                   | Medium     | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/pow(x%2Cn))|
 
 
-##Arrays
+## Arrays
 
 | No.        | Problem Number | Problem Name                                | Difficulty | Solution Link                       |
 |------------|----------------|---------------------------------------------|------------|-------------------------------------|
-| 6          | 344            | Reverse String                              | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Reverse_String)|
-| 7          | 26             | Remove Duplicates from Sorted Array         | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Remove-duplicates-from-sorted-Array)|
-| 8          | 1752           | Check if Array is Sorted and Rotated        | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Check-if-Array-is-Sorted-and-Rotated)|
+| 1          | 344            | Reverse String                              | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Reverse_String)|
+| 2          | 26             | Remove Duplicates from Sorted Array         | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Remove-duplicates-from-sorted-Array)|
+| 3          | 1752           | Check if Array is Sorted and Rotated        | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Check-if-Array-is-Sorted-and-Rotated)|
 
 
 ## Contributing

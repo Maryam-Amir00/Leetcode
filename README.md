@@ -33,7 +33,7 @@ Here is a list of the problems I've solved:
 |------------|----------------|---------------------------------------------|------------|-------------------------------------|
 | 1          | 344            | Reverse String                              | Easy       | [Link]()|
 | 2          | 26             | Remove Duplicates from Sorted Array         | Easy       | [Link]()|
-| 3          | 1752           | Check if Array is Sorted and Rotated        | Easy       | [Link]()|
+| 3          | 1752           | Check if Array is Sorted and Rotated        | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Arrays/Check-if-Array-is-Sorted-and-Rotated.txt)|
 
 
 ## Contributing

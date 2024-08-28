@@ -34,7 +34,7 @@ Here is a list of the problems I've solved:
 | 1          | 344            | Reverse String                              | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Arrays/Reverse_String.txt)|
 | 2          | 26             | Remove Duplicates from Sorted Array         | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Arrays/Remove-duplicates-from-sorted-Array.txt)|
 | 3          | 1752           | Check if Array is Sorted and Rotated        | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Arrays/Check-if-Array-is-Sorted-and-Rotated.txt)|
-| 4          | 29             | Remove Element                              | Easy       | [Link]()|
+| 4          | 29             | Remove Element                              | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Arrays/Remove-Element)|
 
 
 

@@ -24,7 +24,7 @@ Here is a list of the problems I've solved:
 | 2          | 326            | Power of Three                              | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Recursion/Power_of_Three.txt)|
 | 3          | 342            | Power of Four                               | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Recursion/Power_of_Four.txt)|
 | 4          | 509            | Fibonacci Number                            | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Recursion/Fibonacci_Number.txt)|
-| 5          | 50             | pow(x, n)                                   | Medium     | [Link]()|
+| 5          | 50             | pow(x, n)                                   | Medium     | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Recursion/pow(x%2Cn).txt)|
 
 
 ## Arrays

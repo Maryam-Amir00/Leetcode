@@ -1,11 +1,17 @@
 class Solution {
 public:
-    bool isPowerOfThree(int n )  {
-         if (n == 0) {
-        return false;
-    } else if (n == 1) {
-        return true;
-    }
-    return n % 3 == 0 && isPowerOfThree(n / 3);
+    bool isPowerOfThree(int n) {
+        // If n is 0, it cannot be a power of three
+        if (n == 0) {
+            return false;
+        }
+        
+        // If n is 1, it's 3^0, which is a power of three
+        else if (n == 1) {
+            return true;
+        }
+
+        // Check if n is divisible by 3 and recursively check if n/3 is a power of three
+        return n % 3 == 0 && isPowerOfThree(n / 3);
     }
 };

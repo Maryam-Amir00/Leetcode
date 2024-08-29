@@ -1,19 +1,21 @@
 class Solution {
 public:
     double myPow(double x, int n) {
+        // Base case: if the exponent is 0, return 1 (anything raised to the power of 0 is 1)
         if (n == 0)
             return 1;
         
-        // Handle negative exponent
+        // Handle negative exponent by converting it to positive
         long long N = n;
         if (N < 0) {
-            x = 1 / x;
-            N = -N;
+            x = 1 / x;  // Invert the base
+            N = -N;     // Take the absolute value of the exponent
         }
         
         // Recursive call using exponentiation by squaring
-        double half = myPow(x, N / 2);
+        double half = myPow(x, N / 2);  // Calculate x^(N/2)
         
+        // If N is even, return half * half; otherwise, return half * half * x
         if (N % 2 == 0)
             return half * half;
         else

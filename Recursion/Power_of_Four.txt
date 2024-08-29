@@ -1,15 +1,17 @@
 class Solution {
 public:
-    bool isPowerOfFour(int n ) {
-        if ( n==0)
-        {
+    bool isPowerOfFour(int n) {
+        // If n is 0, it cannot be a power of four
+        if (n == 0) {
             return false;
         }
-        if(n == 1)
-        {
+        
+        // If n is 1, it's 4^0, which is a power of four
+        if (n == 1) {
             return true;
         }
 
+        // Check if n is divisible by 4 and recursively check if n/4 is a power of four
         return n % 4 == 0 && isPowerOfFour(n / 4);
     }
 };

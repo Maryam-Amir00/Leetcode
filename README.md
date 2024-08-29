@@ -36,7 +36,7 @@ Here is a list of the problems I've solved:
 | 3          | 1752           | Check if Array is Sorted and Rotated        | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Arrays/Check-if-Array-is-Sorted-and-Rotated.txt)|
 | 4          | 29             | Remove Element                              | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Arrays/Remove-Element)|
 | 5          | 1              | Two Sum                                     | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Arrays/Two_Sum)|
-| 6          | 35             | Search Insert Position                      | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Arrays/Two_Sum)|
+| 6          | 35             | Search Insert Position                      | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Arrays/Search_Insert_Position)|
 
 
 

@@ -1,15 +1,17 @@
 class Solution {
 public:
     bool isPowerOfTwo(int n) {
-       if (n == 0)
-       {
-        return false;
-       }
-        if (n == 1)
-       {
-        return true;
-       }
+        // If n is 0, it cannot be a power of two
+        if (n == 0) {
+            return false;
+        }
+        
+        // If n is 1, it's 2^0, which is a power of two
+        if (n == 1) {
+            return true;
+        }
 
-       return n % 2 == 0 && isPowerOfTwo(n/2);
+        // Check if n is divisible by 2 and recursively check if n/2 is a power of two
+        return n % 2 == 0 && isPowerOfTwo(n / 2);
     }
 };

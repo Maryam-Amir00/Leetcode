@@ -1,15 +1,24 @@
 class Solution {
 public:
     int removeElement(vector<int>& nums, int val) {
-        for(int i = 0; i < nums.size() ;)
+        // Iterate through the vector `nums`
+        for(int i = 0; i < nums.size(); )
         {
+            // If the current element matches `val`
             if(nums[i] == val)
             {
+                // Erase the element at index `i`
                 nums.erase(nums.begin() + i);
+                // No need to increment `i` because the vector shifts left
+                // after erasing, so the next element comes to the current position
             }
             else
-             i++;
+            {
+                // If the current element doesn't match `val`, move to the next element
+                i++;
+            }
         }
+        // Return the new size of the vector after all occurrences of `val` have been removed
         return nums.size();
     }
 };

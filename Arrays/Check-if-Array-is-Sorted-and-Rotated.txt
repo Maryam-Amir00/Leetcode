@@ -1,19 +1,25 @@
 class Solution {
 public:
     bool check(vector<int>& nums) {
-        int drop = 0;
-        
+        int drop = 0;  // Initialize a counter to track the number of "drops" in the array.
+
+        // Iterate through the array to check for any "drops" in order.
         for(int i = 0; i < nums.size() - 1; i++){
+            // If the current element is greater than the next one, it's a drop.
             if (nums[i] > nums[i+1])
                 drop++;
         }
 
+        // After the loop, check if the last element is greater than the first one.
+        // This would indicate a drop when considering the array is circular.
         if (nums.back() > nums[0])
             drop++;
 
+        // If there are no drops or exactly one drop, the array is sorted (or can be sorted by rotation).
         if (drop == 0 || drop == 1)
             return true;
 
+        // If there are more than one drops, the array cannot be sorted by a single rotation.
         return false;
     }
 };

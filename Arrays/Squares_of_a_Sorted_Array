@@ -1,0 +1,27 @@
+class Solution {
+public:
+    vector<int> sortedSquares(vector<int>& nums) {
+        int n = nums.size(); // Get the size of the input array
+        int left = 0; // Initialize left pointer to the start of the array
+        int right = n - 1; // Initialize right pointer to the end of the array
+        int index = n - 1; // Index to fill the result array from the end
+
+        vector<int> result(n); // Create a result array of the same size as nums
+
+        // Loop until the left pointer is greater than the right pointer
+        while (left <= right) {
+            // Compare absolute values of the numbers at left and right pointers
+            if (abs(nums[left]) > abs(nums[right])) { 
+                // If the absolute value at the left is greater, square it and place it at the current index
+                result[index] = nums[left] * nums[left];
+                left++; // Move the left pointer to the right
+            } else {
+                // Otherwise, square the number at the right pointer and place it at the current index
+                result[index] = nums[right] * nums[right];
+                right--; // Move the right pointer to the left
+            }
+            index--; // Move the index to the left to fill the next largest square
+        }
+        return result; // Return the result array containing sorted squares
+    }
+};

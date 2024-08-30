@@ -38,6 +38,7 @@ Here is a list of the problems I've solved:
 | 5          | 1              | Two Sum                                     | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Arrays/Two_Sum)|
 | 6          | 35             | Search Insert Position                      | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Arrays/Search_Insert_Position)|
 | 7          | 1929           | Concatenation of Array                      | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Arrays/Concatenation_of_Array)|
+| 8          | 977            | Squares of a Sorted Array                   | Easy       | [Link]()|
 
 
 

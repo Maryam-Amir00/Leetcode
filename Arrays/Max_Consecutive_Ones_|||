@@ -1,0 +1,32 @@
+class Solution {
+public:
+    // Function to find the longest subarray containing at most 'k' zeroes
+    int longestOnes(vector<int>& nums, int k) {
+        int left = 0; // Left pointer for the start of the window
+        int curr = 0; // To keep track of the number of zeroes in the current window
+        int ans = 0; // To store the maximum length of the subarray
+
+        // Loop through each element in the array using the right pointer
+        for (int right = 0; right < nums.size(); right++) {
+            // If the current element is 0, increment the count of zeroes
+            if(nums[right] == 0) {
+                curr++;
+            }
+
+            // If the count of zeroes in the current window exceeds 'k'
+            while (curr > k) {
+                // Move the left pointer to the right until the count of zeroes is less than or equal to 'k'
+                if (nums[left] == 0) {
+                    curr--;
+                }
+                left++; // Slide the window by moving the left pointer
+            }
+
+            // Update the maximum length of the subarray found so far
+            ans = max(ans, right - left + 1);
+        }
+
+        // Return the maximum length of the subarray
+        return ans;
+    }
+};

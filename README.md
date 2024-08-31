@@ -39,7 +39,7 @@ Here is a list of the problems I've solved:
 | 6          | 35             | Search Insert Position                      | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Arrays/Search_Insert_Position)|
 | 7          | 1929           | Concatenation of Array                      | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Arrays/Concatenation_of_Array)|
 | 8          | 977            | Squares of a Sorted Array                   | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Arrays/Squares_of_a_Sorted_Array)|
-| 9          | 1004           | Max Consecutive Ones III                    | Medium     | [Link]()|
+| 9          | 1004           | Max Consecutive Ones III                    | Medium     | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Arrays/Max_Consecutive_Ones_%7C%7C%7C)|
 | 10         | 643            | Maximum Average Subarray I                  | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Arrays/Maximum_Average_Subarray_I)|
 
 

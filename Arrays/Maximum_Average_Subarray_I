@@ -1,0 +1,32 @@
+class Solution {
+public:
+    // Function to find the maximum average of any contiguous subarray of size k
+    double findMaxAverage(vector<int>& nums, int k) {
+        int left = 0; // Left pointer to keep track of the start of the window
+        double curr_sum = 0; // Variable to store the current sum of the window
+        double max_average = -1e5; // Initialize the maximum average to a very small number
+
+        // Loop through each element in the array using the right pointer
+        for (int right = 0; right < nums.size(); ++right) {
+            // Add the current element to the current sum
+            curr_sum += nums[right];
+
+            // Check if the current window size is equal to k
+            if (right - left + 1 == k) {
+                // Calculate the current average of the window
+                double curr_average = curr_sum / k;
+
+                // Update the maximum average if the current average is greater
+                max_average = max(max_average, curr_average);
+
+                // Slide the window by subtracting the element at the 'left' pointer
+                // and moving the 'left' pointer to the right
+                curr_sum -= nums[left];
+                left++;
+            }
+        }
+
+        // Return the maximum average found
+        return max_average;
+    }
+};

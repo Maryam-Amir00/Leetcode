@@ -1,0 +1,33 @@
+class Solution {
+public:
+    int waysToSplitArray(vector<int>& nums) {
+
+        // Initialize a prefix sum vector with the first element of nums
+        // This will store the cumulative sum of elements from the start of the array up to each index
+        vector<long> prefix = {nums[0]};
+        
+        // Calculate the prefix sum for the entire array
+        for(int i = 1; i < nums.size(); i++)
+        {
+            // Add the current element to the last value in prefix to get the cumulative sum up to this index
+            prefix.push_back(prefix.back() + nums[i]);
+        }
+
+        int ans = 0; // Initialize a counter to keep track of valid splits
+        
+        // Iterate over the array, stopping before the last element
+        // We stop at nums.size() - 1 because we want to split the array into two non-empty parts
+        for(int i = 0; i < nums.size() - 1; i++)
+        {
+            long left = prefix[i]; // Sum of the left subarray (from index 0 to i)
+            long right = prefix.back() - prefix[i]; // Sum of the right subarray (from index i+1 to end)
+            
+            // If the sum of the left subarray is greater than or equal to the sum of the right subarray
+            if(left >= right)
+            {
+                ans++; // Increment the counter as this is a valid split
+            }
+        }
+        return ans; // Return the total number of valid splits
+    }
+};

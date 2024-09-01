@@ -1,0 +1,19 @@
+class Solution {
+public:
+    vector<int> runningSum(vector<int>& nums) {
+        // Initialize a vector named 'prefix' with the first element of 'nums'
+        // This will store the running sum of the elements.
+        vector<int> prefix = {nums[0]};
+
+        // Loop through the 'nums' vector starting from the second element
+        for(int i = 1; i < nums.size(); i++)
+        {
+            // Add the current element of 'nums' to the last element of 'prefix'
+            // and push the result to the 'prefix' vector.
+            prefix.push_back(prefix.back() + nums[i]);
+        }
+
+        // Return the 'prefix' vector, which now contains the running sum.
+        return prefix;
+    }
+};

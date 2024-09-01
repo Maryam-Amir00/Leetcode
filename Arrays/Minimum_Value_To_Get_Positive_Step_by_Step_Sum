@@ -1,0 +1,20 @@
+class Solution {
+public:
+    int minStartValue(vector<int>& nums) {
+        int start_value = 1; // Initialize the starting value to 1
+        int sum = 0;         // Initialize the cumulative sum to 0
+
+        // Iterate through the array to calculate the cumulative sum at each step
+        for (int i = 0; i < nums.size(); i++) {
+            sum += nums[i]; // Add the current element to the cumulative sum
+
+            // If the cumulative sum is less than 1, adjust the start value
+            if (sum < 1) {
+                // Calculate the minimum start value needed to ensure that the sum is always >= 1
+                start_value = max(start_value, 1 - sum);
+            }
+        }
+        
+        return start_value; // Return the minimum start value
+    }
+};

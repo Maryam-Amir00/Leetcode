@@ -42,6 +42,7 @@ Here is a list of the problems I've solved:
 | 9          | 1004           | Max Consecutive Ones III                    | Medium     | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Arrays/Max_Consecutive_Ones_%7C%7C%7C)|
 | 10         | 643            | Maximum Average Subarray I                  | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Arrays/Maximum_Average_Subarray_I)|
 | 11         | 1480           | Running Sum Of 1D Array                     | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Arrays/Running_Sum_of_1D_Array)|
+| 12         | 2270           | Number of Ways to Split Array               | Medium     | [link]()|
 
 
 

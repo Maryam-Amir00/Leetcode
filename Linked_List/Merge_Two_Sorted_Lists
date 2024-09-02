@@ -1,0 +1,49 @@
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
+
+class Solution {
+public:
+    ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
+        // Create a dummy node that will serve as the starting point of the merged list.
+        ListNode dummy(0);
+        // Initialize a pointer 'current' that will traverse the new merged list.
+        ListNode *current = &dummy;
+
+        // Loop until one of the lists becomes empty.
+        while (list1 != nullptr && list2 != nullptr) {
+            // Compare the values at the current nodes of both lists.
+            if (list1->val <= list2->val) {
+                // If list1's value is smaller or equal, add list1's node to the merged list.
+                current->next = list1;
+                // Move to the next node in list1.
+                list1 = list1->next;
+            } else {
+                // If list2's value is smaller, add list2's node to the merged list.
+                current->next = list2;
+                // Move to the next node in list2.
+                list2 = list2->next;
+            }
+            // Move the 'current' pointer to the next position in the merged list.
+            current = current->next;
+        }
+
+        // At this point, one of the lists is empty.
+        // Attach the remaining part of the non-empty list to the merged list.
+        if (list1 != nullptr) {
+            current->next = list1;
+        } else {
+            current->next = list2;
+        }
+
+        // Return the merged list, which starts from the node after the dummy node.
+        return dummy.next;
+    }
+};

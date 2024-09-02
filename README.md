@@ -49,6 +49,8 @@ Here is a list of the problems I've solved:
 ## Linked List
 
 | No.        | Problem Number | Problem Name                                             | Difficulty | Solution Link                       |
+|------------|----------------|----------------------------------------------------------|------------|-------------------------------------|
+| 1          | 21             | Merge Two Sorted Lists                                   | Easy       | [Link]()|
 
 ## Contributing
 

@@ -44,6 +44,7 @@ Here is a list of the problems I've solved:
 | 11         | 1480           | Running Sum Of 1D Array                                  | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Arrays/Running_Sum_of_1D_Array)|
 | 12         | 2270           | Number of Ways to Split Array                            | Medium     | [link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Arrays/Number_of_Ways_To_Split_Array)|
 | 13         | 1413           | Minimum Value to Get Positive Step by Step Sum           | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Arrays/Minimum_Value_To_Get_Positive_Step_by_Step_Sum)|
+| 14         | 2090           | K Radius Subarray Averages                               | Medium     | [Link]()|
 
 
 

@@ -1,0 +1,44 @@
+class Solution {
+public:
+    vector<int> getAverages(vector<int>& nums, int k) {
+        
+        // If k is 0, return the original array as no averaging is needed
+        if (k == 0) {
+            return nums;
+        }
+
+        // Calculate the size of the sliding window (2*k + 1)
+        int windowSize = 2 * k + 1;
+        int n = nums.size();  // Get the size of the input array
+        vector<int> averages(n, -1);  // Initialize the result array with -1
+
+        // If the window size is greater than the array size, return the array filled with -1
+        if (windowSize > n) {
+            return averages;
+        }
+
+        // Create a prefix sum array to store cumulative sums
+        vector<long long> prefix(n + 1);
+        for (int i = 0; i < n; ++i) {
+            prefix[i + 1] = prefix[i] + nums[i];
+        }
+        
+        // Calculate the averages using the prefix sum array
+        for (int i = k; i < (n - k); ++i) {
+            int leftBound = i - k;  // Left bound of the window
+            int rightBound = i + k;  // Right bound of the window
+
+            // Subtract the prefix sum of the left bound from the right bound to get the sum of the current window
+            long long subArraySum = prefix[rightBound + 1] - prefix[leftBound];
+
+            // Calculate the average of the current window
+            int average = subArraySum / windowSize;
+
+            // Store the average in the result array
+            averages[i] = average;
+        }
+
+        // Return the array containing the averages
+        return averages;
+    }
+};

@@ -1,0 +1,30 @@
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
+
+class Solution {
+public:
+    // Function to find the middle node of a singly linked list
+    ListNode* middleNode(ListNode* head) {
+        // Initialize two pointers, both starting at the head of the list
+        ListNode* slow = head;
+        ListNode* fast = head;
+
+        // Traverse the list with the fast pointer moving twice as fast as the slow pointer
+        while (fast != nullptr && fast->next != nullptr)
+        {
+            slow = slow->next;            // Slow pointer moves one step
+            fast = fast->next->next;      // Fast pointer moves two steps
+        }
+
+        // When the fast pointer reaches the end, the slow pointer will be at the middle node
+        return slow;
+    }
+};

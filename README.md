@@ -54,7 +54,7 @@ Here is a list of the problems I've solved:
 | 2          | 83             | Remove Duplicates From Sorted List                       | Easy       | [link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Linked_List/Remove_Duplicates_From_Sorted_List)|
 | 3          | 141            | Linked List Cycle                                        | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Linked_List/Linked_List_Cycle)|
 | 4          | 876            | Middle of the Linked List                                | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Linked_List/Middle_of_The_Linked_List)|
-| 5          | 203            | Remove Linked List Elements                              | Easy       | [Link]()|
+| 5          | 203            | Remove Linked List Elements                              | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Linked_List/Remove_Linked_List_Elements)|
 
 ## Contributing
 

@@ -1,0 +1,44 @@
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
+class Solution {
+public:
+    // Function to swap every two adjacent nodes in a linked list
+    ListNode* swapPairs(ListNode* head) {
+        // Step 1: Check if the list is empty or has only one node
+        if (head == nullptr || head->next == nullptr) {
+            return head; // No swap needed if list is empty or has only one node
+        }
+        
+        // Step 2: Set up a dummy pointer that will become the new head after the first swap
+        ListNode* dummy = head->next; // The new head of the list will be the second node
+        ListNode* prev = nullptr;     // To keep track of the previous node during swapping
+        
+        // Step 3: Traverse and swap nodes in pairs
+        while (head != nullptr && head->next != nullptr) {
+            if (prev != nullptr) {
+                // Link the previous node to the second node of the current pair
+                prev->next = head->next;
+            }
+            prev = head; // Update the previous node to the current head
+            
+            // Step 4: Swap the current pair of nodes
+            ListNode* nextNode = head->next->next; // Save the node that follows the current pair
+            head->next->next = head;   // Point the second node of the pair to the first node
+            
+            // Step 5: Move the head to the next pair
+            head->next = nextNode;     // Update the current node's next pointer
+            head = nextNode;           // Move the head pointer to the next pair of nodes
+        }
+        
+        // Step 6: Return the new head of the swapped list
+        return dummy;
+    }
+};

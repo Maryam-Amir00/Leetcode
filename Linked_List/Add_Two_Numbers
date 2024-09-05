@@ -1,0 +1,53 @@
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
+class Solution {
+public:
+    // Function to add two numbers represented by linked lists
+    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
+        // Create a new dummy node to store the result
+        ListNode* result = new ListNode(0);  // Initialize result list with a dummy node
+        ListNode* ptr = result;  // Pointer to traverse the result list
+        int carry = 0;  // Variable to store carry-over during addition
+
+        // Step 1: Traverse both lists while either list has remaining nodes
+        while (l1 != nullptr || l2 != nullptr) {
+            int sum = 0 + carry;  // Start sum with the carry from the previous iteration
+            
+            // Step 2: Add the value of the current node in l1 to sum if it exists
+            if (l1 != nullptr) {
+                sum += l1->val;  // Add the value from l1
+                l1 = l1->next;  // Move to the next node in l1
+            }
+
+            // Step 3: Add the value of the current node in l2 to sum if it exists
+            if (l2 != nullptr) {
+                sum += l2->val;  // Add the value from l2
+                l2 = l2->next;  // Move to the next node in l2
+            }
+
+            // Step 4: Calculate the carry and the remainder (the digit to store in the current node)
+            carry = sum / 10;  // Calculate carry (1 if sum >= 10, otherwise 0)
+            sum = sum % 10;  // Get the remainder to store in the current node (digit between 0 and 9)
+
+            // Step 5: Create a new node with the calculated sum and link it to the result list
+            ptr->next = new ListNode(sum);  // Create a new node with the digit and link it
+            ptr = ptr->next;  // Move the pointer to the newly created node
+        }
+
+        // Step 6: If there's any carry left after the final addition, create a new node for it
+        if (carry == 1) {
+            ptr->next = new ListNode(1);  // Add a new node with the carry value
+        }
+
+        // Step 7: Return the next node of the dummy (actual result list starts after the dummy)
+        return result->next;  // Skip the dummy node and return the actual result
+    }
+};

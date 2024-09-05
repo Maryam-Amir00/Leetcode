@@ -58,6 +58,7 @@ Here is a list of the problems I've solved:
 | 6          | 19             | Remove Nth Node From End of list                         | Medium     | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Linked_List/Remove_Nth_Node_From_End_of_list)|
 | 7          | 24             | Swap Nodes in Pairs                                      | Medium     | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Linked_List/Swap_Nodes_in_Pairs)|
 | 8          | 142            | Linked List Cycle II                                     | Medium     | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Linked_List/Linked_List_Cycle_2)|
+| 9          | 2              | Add Two Numbers                                          | Medium     | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Linked_List/Add_Two_Numbers)|
 
 
 

@@ -56,6 +56,7 @@ Here is a list of the problems I've solved:
 | 4          | 876            | Middle of the Linked List                                | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Linked_List/Middle_of_The_Linked_List)|
 | 5          | 203            | Remove Linked List Elements                              | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Linked_List/Remove_Linked_List_Elements)|
 | 6          | 19             | Remove Nth Node From End of list                         | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Linked_List/Remove_Nth_Node_From_End_of_list)|
+| 7          | 24             | Swap Nodes in Pairs                                      | Medium     | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Linked_List/Swap_Nodes_in_Pairs)|
 
 
 ## Contributing

@@ -1,0 +1,40 @@
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
+class Solution {
+public:
+    // Function to reorder a linked list such that all odd-indexed nodes come before even-indexed nodes
+    ListNode* oddEvenList(ListNode* head) {
+        // Step 1: Handle edge cases where the list is empty or has only one node
+        if (head == nullptr || head->next == nullptr) {
+            return head; // No reordering needed if list is empty or has only one node
+        }
+
+        // Step 2: Initialize pointers for odd and even nodes
+        ListNode* odd = head;            // Pointer to the first odd node
+        ListNode* even = head->next;     // Pointer to the first even node
+        ListNode* evenhead = even;       // Store the head of the even nodes list
+
+        // Step 3: Rearrange the nodes such that odd nodes come before even nodes
+        while (even != nullptr && even->next != nullptr) {
+            odd->next = odd->next->next; // Skip the next even node and link the current odd node to the next odd node
+            odd = odd->next;             // Move the odd pointer to the next odd node
+
+            even->next = even->next->next; // Skip the next odd node and link the current even node to the next even node
+            even = even->next;             // Move the even pointer to the next even node
+        }
+
+        // Step 4: Link the end of the odd list to the head of the even list
+        odd->next = evenhead;  // Connect the last odd node to the head of the even nodes list
+
+        // Step 5: Return the reordered list
+        return head;  // Return the head of the reordered list
+    }
+};

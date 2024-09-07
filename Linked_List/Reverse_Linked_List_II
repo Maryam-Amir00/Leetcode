@@ -1,0 +1,50 @@
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
+class Solution {
+public:
+    // Function to reverse a sublist of a linked list from position `left` to `right`
+    ListNode* reverseBetween(ListNode* head, int left, int right) {
+        // Step 1: Create a dummy node and link it to the head of the list
+        ListNode* dummy = new ListNode(0);
+        dummy->next = head;  // This dummy node will make it easier to handle edge cases
+
+        // Step 2: Find the node just before the "left" position and the current node at "left"
+        ListNode* leftPre = dummy;  // This will be the node just before the "left" position
+        ListNode* currNode = head;  // This will be the node at the "left" position
+
+        // Step 3: Move `leftPre` and `currNode` to the correct positions
+        for (int i = 0; i < left - 1; i++) {
+            leftPre = leftPre->next;  // Move leftPre to the node before "left"
+            currNode = currNode->next;  // Move currNode to the "left" node
+        }
+
+        // Now `currNode` is at the "left" node and `leftPre` is the node before "left"
+        ListNode* subListHead = currNode;  // This will be the start of the sublist to reverse
+
+        // Step 4: Start the process of reversing the sublist from position `left` to `right`
+        ListNode* preNode = nullptr;  // PreNode will store the previous node during reversal
+        
+        // Step 5: Reverse the nodes between `left` and `right`
+        for (int i = 0; i <= right - left; i++) {
+            ListNode* nextNode = currNode->next;  // Store the next node temporarily
+            currNode->next = preNode;  // Reverse the current node by pointing it to the previous node
+            preNode = currNode;  // Move preNode to the current node (step forward)
+            currNode = nextNode;  // Move currNode to the next node (step forward)
+        }
+
+        // Step 6: Reconnect the reversed sublist back into the original list
+        leftPre->next = preNode;  // Connect the node before "left" to the new head of the reversed sublist
+        subListHead->next = currNode;  // Connect the old "left" node (now the end of the reversed sublist) to the rest of the list
+
+        // Step 7: Return the new head of the list (which is still the same as the original head if "left" was greater than 1)
+        return dummy->next;  // Return the next node of the dummy, as it points to the real head of the list
+    }
+};

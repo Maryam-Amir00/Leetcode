@@ -62,6 +62,7 @@ Here is a list of the problems I've solved:
 | 10         | 237            | Delete Node in a Linked List                             | Medium     | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Linked_List/Delete_Node_in_a_Linked_list)|
 | 11         | 328            | Odd Even Linked List                                     | Medium     | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Linked_List/Odd_Even_Linked_List)|
 | 12         | 206            | Reverse Linked List                                      | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Linked_List/Reverse_Linked_List)|
+| 13         | 92             | Reverse Linked List II                                   | Medium     | [Link]()|
 
 
 

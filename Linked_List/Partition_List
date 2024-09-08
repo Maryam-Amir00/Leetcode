@@ -1,0 +1,46 @@
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
+class Solution {
+public:
+    // Function to partition a linked list around a value x
+    ListNode* partition(ListNode* head, int x) {
+        // Step 1: Create two dummy nodes to build two separate lists
+        ListNode Node(0);  // Dummy node for elements smaller than x
+        ListNode* before = &Node;  // Pointer to the 'before' list
+
+        ListNode AfterNode(0);  // Dummy node for elements greater or equal to x
+        ListNode* after = &AfterNode;  // Pointer to the 'after' list
+
+        // Step 2: Traverse the original list and partition nodes based on value of x
+        while (head != nullptr) {
+            if (head->val < x) {
+                // Step 2.1: If the current node's value is less than x, add it to the 'before' list
+                before->next = head;  // Attach the node to the end of the 'before' list
+                before = before->next;  // Move the 'before' pointer to the next node
+            } else {
+                // Step 2.2: If the current node's value is greater or equal to x, add it to the 'after' list
+                after->next = head;  // Attach the node to the end of the 'after' list
+                after = after->next;  // Move the 'after' pointer to the next node
+            }
+            // Move to the next node in the original list
+            head = head->next;
+        }
+
+        // Step 3: Terminate the 'after' list to avoid any cyclic references
+        after->next = nullptr;  // The last node in 'after' should point to nullptr
+
+        // Step 4: Link the 'before' list with the 'after' list
+        before->next = AfterNode.next;  // Attach the 'after' list to the end of the 'before' list
+
+        // Step 5: Return the head of the new list, which is Node.next (since Node is a dummy node)
+        return Node.next;
+    }
+};

@@ -1,0 +1,54 @@
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
+class Solution {
+public:
+    // Function to reorder the linked list in-place
+    void reorderList(ListNode* head) {
+        // Step 1: If the list is empty or has only one element, no need to reorder
+        if (head == nullptr || head->next == nullptr) {
+            return;
+        }
+
+        // Step 2: Find the middle of the linked list using two pointers (p1 and p2)
+        ListNode* p1 = head;
+        ListNode* p2 = head;
+        // Move p2 twice as fast as p1 to reach the middle
+        while (p2->next != nullptr && p2->next->next != nullptr) {
+            p1 = p1->next;  // p1 moves one step
+            p2 = p2->next->next;  // p2 moves two steps
+        }
+        // Now, p1 is at the middle of the list
+
+        // Step 3: Reverse the second half of the list, starting from p1->next
+        ListNode* preMiddle = p1;  // Save the middle point of the list
+        ListNode* preCurrent = p1->next;  // The first node of the second half
+        while (preCurrent->next != nullptr) {
+            ListNode* current = preCurrent->next;  // Current node to move
+            preCurrent->next = current->next;  // Move the current node out of the second half
+            current->next = preMiddle->next;  // Insert the current node after preMiddle
+            preMiddle->next = current;  // Update preMiddle's next pointer
+        }
+        // After this loop, the second half of the list is reversed
+
+        // Step 4: Start interleaving the first and second halves
+        p1 = head;  // p1 starts from the head (first half)
+        p2 = preMiddle->next;  // p2 starts from the first node of the reversed second half
+        while (p1 != preMiddle) {
+            preMiddle->next = p2->next;  // Remove p2 from the second half
+            p2->next = p1->next;  // Insert p2 after p1
+            p1->next = p2;  // Connect p1 to p2
+
+            // Move both pointers one step forward
+            p1 = p2->next;  // Move p1 to the next node
+            p2 = preMiddle->next;  // Move p2 to the next node in the reversed second half
+        }
+    }
+};

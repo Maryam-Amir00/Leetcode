@@ -66,6 +66,7 @@ Here is a list of the problems I've solved:
 | 14         | 86             | Partition List                                           | Medium     | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Linked_List/Partition_List)|
 | 15         | 143            | Reorder List                                             | Medium     | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Linked_List/Reorder_List)|
 | 16         | 61             | Rotate List                                              | Medium     | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Linked_List/Rotate_List)|
+| 17         | 2095           | Delete the Middle Node of a Linked List                  | Medium     | [Link]()|
 
 
 

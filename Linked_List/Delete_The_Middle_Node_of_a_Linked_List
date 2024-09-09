@@ -1,0 +1,47 @@
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
+class Solution {
+public:
+    // Function to delete the middle node from the linked list
+    ListNode* deleteMiddle(ListNode* head) {
+
+        // Step 1: Handle base cases
+        if (head == nullptr) {
+            return head;  // If the list is empty, return nullptr
+        }
+
+        if (head->next == nullptr) {
+            delete head;  // If the list has only one node, delete it and return nullptr
+            return nullptr;
+        }
+
+        // Step 2: Initialize slow and fast pointers to find the middle node
+        ListNode* slow = head;
+        ListNode* fast = head;
+        ListNode* prev = nullptr;  // To keep track of the node before the middle node
+
+        // Step 3: Move slow pointer one step and fast pointer two steps
+        //         When fast reaches the end, slow will be at the middle
+        while (fast != nullptr && fast->next != nullptr) {
+            prev = slow;          // Keep track of the node before the middle
+            slow = slow->next;    // Move slow pointer one step
+            fast = fast->next->next;  // Move fast pointer two steps
+        }
+
+        // Step 4: Delete the middle node
+        ListNode* temp = prev->next;  // Middle node is the next node of prev
+        prev->next = prev->next->next;  // Skip over the middle node
+        delete temp;  // Delete the middle node to free memory
+
+        // Step 5: Return the modified list
+        return head;
+    }
+};

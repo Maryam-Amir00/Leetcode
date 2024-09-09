@@ -1,0 +1,54 @@
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
+class Solution {
+public:
+    // Function to rotate the list to the right by k positions
+    ListNode* rotateRight(ListNode* head, int k) {
+        // Step 1: Handle base cases where no rotation is needed
+        if (head == nullptr || k == 0) {
+            return head;  // No rotation needed if list is empty or k is 0
+        }
+
+        // Step 2: Find the length of the list and the last node (tail)
+        ListNode* tail = head;
+        int length = 1;  // Start with length 1 (since we are at head)
+        while (tail->next != nullptr) {
+            length++;  // Increment length as we traverse the list
+            tail = tail->next;  // Move to the next node
+        }
+
+        // Step 3: If k is a multiple of the length, the list remains unchanged
+        if (k % length == 0) {
+            return head;  // No need to rotate if k is a multiple of the list length
+        }
+
+        // Step 4: Calculate the effective number of rotations needed
+        k = k % length;  // If k is larger than the list length, reduce k
+
+        // Step 5: Connect the last node to the head to form a circular list
+        tail->next = head;  // Create a circular link by connecting the tail to the head
+
+        // Step 6: Find the new last node, which is (length - k) nodes from the original head
+        ListNode* newlast = head;
+        for (int i = 1; i < length - k; i++) {
+            newlast = newlast->next;  // Move the pointer to the new last node
+        }
+
+        // Step 7: The new head is the node after the new last node
+        head = newlast->next;  // Set the new head
+
+        // Step 8: Break the circular link to form a standard list
+        newlast->next = nullptr;  // Set the new last node's next pointer to null
+
+        // Step 9: Return the new head of the rotated list
+        return head;
+    }
+};

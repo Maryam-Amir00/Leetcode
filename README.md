@@ -68,6 +68,7 @@ Here is a list of the problems I've solved:
 | 16         | 61             | Rotate List                                              | Medium     | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Linked_List/Rotate_List)|
 | 17         | 2095           | Delete the Middle Node of a Linked List                  | Medium     | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Linked_List/Delete_The_Middle_Node_of_a_Linked_List)|
 | 18         | 82             | Remove Duplicates From Sorted List II                    | Medium     | [Link]()|
+| 19         | 234            | Palindrome Linked List                                   | Easy       | [Link]()|
 
 
 

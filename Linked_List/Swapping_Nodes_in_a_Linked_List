@@ -1,0 +1,43 @@
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
+class Solution {
+public:
+    // Function to swap the values of the kth node from the beginning and the kth node from the end
+    ListNode* swapNodes(ListNode* head, int k) {
+        // Declare two pointers: slow and fast, both initially set to the head of the list
+        ListNode* slow = head;
+        ListNode* fast = head;
+
+        // Move the fast pointer to the kth node from the start of the list
+        // Decrement k in each iteration to move the fast pointer k times
+        while(--k) {
+            fast = fast->next;
+        }
+
+        // Now fast points to the kth node from the beginning
+        ListNode* first = fast; // Store this node (it will be one of the nodes to swap)
+
+        // Move both slow and fast pointers until fast reaches the last node
+        // This will place the slow pointer at the kth node from the end
+        while(fast != nullptr && fast->next != nullptr) {
+            slow = slow->next;
+            fast = fast->next;
+        }
+
+        // Swap the values of the two nodes (kth from start and kth from end)
+        int temp = slow->val;
+        slow->val = first->val;
+        first->val = temp;
+
+        // Return the head of the list after swapping the nodes
+        return head;
+    }
+};

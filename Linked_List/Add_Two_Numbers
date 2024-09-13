@@ -51,4 +51,3 @@ public:
         return result->next;  // Skip the dummy node and return the actual result
     }
 };
-

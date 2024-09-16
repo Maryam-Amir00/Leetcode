@@ -1,0 +1,43 @@
+class Solution {
+public:
+    bool isValid(string s) {
+        // Create a stack to store opening parentheses
+        stack<char> stack;
+
+        // Loop through each character in the input string 's'
+        for (char c : s) {
+            
+            // If the character is an opening bracket, push it to the stack
+            if (c == '(' || c == '{' || c == '[') {
+                stack.push(c);
+            } 
+            
+            // If the character is a closing bracket
+            else if (c == ')' || c == '}' || c == ']') {
+                
+                // If the stack is empty, it means there's no matching opening bracket
+                if (stack.empty()) {
+                    return false;  // Invalid case
+                }
+                
+                // Get the top element (last opening bracket) from the stack
+                char previousOpening = stack.top();
+                
+                // Check if the closing bracket matches the last opening bracket
+                // If not, return false (invalid case)
+                if ((c == ')' && previousOpening != '(') ||
+                    (c == '}' && previousOpening != '{') ||
+                    (c == ']' && previousOpening != '[')) {
+                    return false;  // Brackets mismatch
+                }
+                
+                // If the brackets match, pop the opening bracket from the stack
+                stack.pop();
+            }
+        }
+
+        // After processing all characters, check if the stack is empty
+        // If the stack is empty, it means all brackets were matched properly
+        return stack.empty();
+    }
+};

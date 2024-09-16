@@ -75,7 +75,7 @@ Here is a list of the problems I've solved:
 
 | No.        | Problem Number | Problem Name                                             | Difficulty | Solution Link                       |
 |------------|----------------|----------------------------------------------------------|------------|-------------------------------------|
-| 1          | 20             | Valid Parenthesis                                        | Easy       | [Link]()|
+| 1          | 20             | Valid Parenthesis                                        | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Stack/Valid_Parenthesis)|
 
 
 

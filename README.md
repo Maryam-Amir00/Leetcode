@@ -71,6 +71,12 @@ Here is a list of the problems I've solved:
 | 19         | 234            | Palindrome Linked List                                   | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Linked_List/Palindrome_Linked_List)|
 | 20         | 1721           | Swapping Nodes in a Linked List                          | Medium     | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Linked_List/Swapping_Nodes_in_a_Linked_List)|
 
+## Stack
+
+| No.        | Problem Number | Problem Name                                             | Difficulty | Solution Link                       |
+|------------|----------------|----------------------------------------------------------|------------|-------------------------------------|
+| 1          | 20             | Valid Parenthesis                                        | Easy       | [Link]()|
+
 
 
 ## Contributing

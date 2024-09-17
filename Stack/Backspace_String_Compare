@@ -1,0 +1,43 @@
+class Solution {
+public:
+    bool backspaceCompare(string s, string t) {
+        // Initialize two strings 'fors' and 'fort' to build the final versions of 's' and 't' after processing backspaces
+        string fors = "";
+        string fort = "";
+
+        // Process the string 's'
+        for(char c : s) {
+            // If the current character is a backspace ('#')
+            if(c == '#') {
+                // If 'fors' is not empty, remove the last character (mimicking the backspace)
+                if(!fors.empty()) {
+                    fors.pop_back();
+                }
+            } else {
+                // Otherwise, add the current character to 'fors'
+                fors.push_back(c);
+            }
+        }
+
+        // Process the string 't' in the same way as 's'
+        for(char c : t) {
+            // If the current character is a backspace ('#')
+            if(c == '#') {
+                // If 'fort' is not empty, remove the last character (mimicking the backspace)
+                if(!fort.empty()) {
+                    fort.pop_back();
+                }
+            } else {
+                // Otherwise, add the current character to 'fort'
+                fort.push_back(c);
+            }
+        }
+
+        // Compare the processed strings 'fors' and 'fort'
+        if(fors == fort) {
+            return true;  // If they are the same, return true
+        }
+
+        return false;  // Otherwise, return false
+    }
+};

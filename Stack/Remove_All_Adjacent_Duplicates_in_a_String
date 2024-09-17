@@ -1,0 +1,24 @@
+class Solution {
+public:
+    string removeDuplicates(string s) {
+        // Initialize an empty string 'result' to store the processed characters
+        string result = "";
+
+        // Loop through each character 'c' in the input string 's'
+        for(char c : s) {
+            
+            // Check if 'result' is not empty and the last character in 'result' is the same as 'c'
+            if(!result.empty() && result.back() == c) {
+                // If the last character in 'result' is the same as 'c', remove the last character from 'result'
+                result.pop_back();  // This effectively removes the duplicate character
+            }
+            else {
+                // If the last character is different, add the current character 'c' to 'result'
+                result.push_back(c);
+            }
+        }
+
+        // Return the final string after removing adjacent duplicates
+        return result;
+    }
+};

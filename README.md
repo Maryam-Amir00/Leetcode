@@ -77,7 +77,7 @@ Here is a list of the problems I've solved:
 |------------|----------------|----------------------------------------------------------|------------|-------------------------------------|
 | 1          | 20             | Valid Parenthesis                                        | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Stack/Valid_Parenthesis)|
 | 2          | 1047           | Remove All Adjacent Duplicates In String                 | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Stack/Remove_All_Adjacent_Duplicates_in_a_String)|
-| 3          | 844            | Backspace String Compare                                 | Easy       | [Link]()|
+| 3          | 844            | Backspace String Compare                                 | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Stack/Backspace_String_Compare)|
 
 
 

@@ -79,7 +79,7 @@ Here is a list of the problems I've solved:
 | 2          | 1047           | Remove All Adjacent Duplicates In String                 | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Stack/Remove_All_Adjacent_Duplicates_in_a_String)|
 | 3          | 844            | Backspace String Compare                                 | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Stack/Backspace_String_Compare)|
 | 4          | 71             | Simplify Path                                            | Medium     | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Stack/Simplify_Path)|
-| 5          | 1544           | Make The String Great                                    | Easy       | [Link]()|
+| 5          | 1544           | Make The String Great                                    | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Stack/Make_The_String_Great)|
 
 
 

@@ -1,0 +1,37 @@
+class Solution {
+public:
+    string simplifyPath(string path) {
+        // Create a stringstream to easily split the path by '/' characters
+        stringstream ss(path);
+        string part;
+        stack<string> st;  // Stack to store valid path parts
+
+        // Read the path string part by part, splitting by '/'
+        while (getline(ss, part, '/')) {
+            
+            // If part is ".." and the stack is not empty, go up a directory
+            if (part == ".." && !st.empty()) {
+                st.pop();  // Move up by removing the top directory from the stack
+            }
+            // If part is a valid directory name, add it to the stack
+            else if (part != "" && part != "." && part != "..") {
+                st.push(part);
+            }
+        }
+
+        // If the stack is empty, it means the path is the root directory "/"
+        if (st.empty()) {
+            return "/";
+        }
+
+        string result;  // String to store the simplified path
+
+        // Build the result string from the stack, starting from the bottom
+        while (!st.empty()) {
+            result = "/" + st.top() + result;  // Add directories to result
+            st.pop();
+        }
+        
+        return result;  // Return the simplified absolute path
+    }
+};

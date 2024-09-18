@@ -1,0 +1,24 @@
+class Solution {
+public:
+    string makeGood(string s) {
+        string ans = "";  // Result string to store the "good" version of the input
+
+        // Loop through each character in the input string `s`
+        for (char c : s) {
+            // If `ans` is not empty and the current character `c` is the opposite case 
+            // of the last character in `ans`, remove the last character from `ans`
+            // The condition checks if the absolute difference between the current character
+            // and the last character in `ans` is 32 (difference between lowercase and uppercase letters)
+            if (!ans.empty() && (ans.back() + 32 == c || ans.back() - 32 == c)) {
+                ans.pop_back();  // Remove the last character from `ans` because they cancel out
+            }
+            else {
+                // Otherwise, push the current character `c` to the result string `ans`
+                ans.push_back(c);
+            }
+        }
+        
+        // Return the "good" string after processing all characters
+        return ans;
+    }
+};

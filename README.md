@@ -80,7 +80,7 @@ Here is a list of the problems I've solved:
 | 3          | 844            | Backspace String Compare                                 | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Stack/Backspace_String_Compare)|
 | 4          | 71             | Simplify Path                                            | Medium     | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Stack/Simplify_Path)|
 | 5          | 1544           | Make The String Great                                    | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Stack/Make_The_String_Great)|
-| 6          | 856            | Score Of Parentheses                                     | Medium     | [Link]()|
+| 6          | 856            | Score Of Parentheses                                     | Medium     | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Stack/Score_Of_Parenthesis)|
 
 
 

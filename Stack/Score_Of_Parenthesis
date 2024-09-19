@@ -1,0 +1,23 @@
+class Solution {
+public:
+    int scoreOfParentheses(string s) {
+        int score = 0;  // Initialize the score to 0
+        int depth = 0;  // Initialize the depth to 0
+
+        // Iterate through each character in the string
+        for (int i = 0; i < s.length(); ++i) {
+            if (s[i] == '(') {
+                depth++;  // Increase depth for an opening parenthesis
+            } else {
+                depth--;  // Decrease depth for a closing parenthesis
+                // Check if the previous character was an opening parenthesis
+                if (s[i - 1] == '(') {
+                    // If so, add the score for the current pair of parentheses
+                    score += pow(2, depth);
+                }
+            }
+        }
+        
+        return score;  // Return the final score
+    }
+};

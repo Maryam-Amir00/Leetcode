@@ -81,7 +81,7 @@ Here is a list of the problems I've solved:
 | 4          | 71             | Simplify Path                                            | Medium     | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Stack/Simplify_Path)|
 | 5          | 1544           | Make The String Great                                    | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Stack/Make_The_String_Great)|
 | 6          | 856            | Score Of Parentheses                                     | Medium     | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Stack/Score_Of_Parenthesis)|
-| 7          | 2390           | Removing Stars From a String                             | Medium     | [Link]()|
+| 7          | 2390           | Removing Stars From a String                             | Medium     | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Stack/Removing_Stars_From_a_string)|
 
 
 

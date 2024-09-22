@@ -41,4 +41,3 @@ public:
         return stack.empty();
     }
 };
-

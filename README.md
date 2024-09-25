@@ -85,6 +85,10 @@ Here is a list of the problems I've solved:
 
 ## Queue
 
+| No.        | Problem Number | Problem Name                                | Difficulty | Solution Link                       |
+|------------|----------------|---------------------------------------------|------------|-------------------------------------|
+| 1          |                |                                             |            |                                     |
+
 
 
 ## Contributing

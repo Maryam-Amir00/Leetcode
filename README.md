@@ -87,7 +87,7 @@ Here is a list of the problems I've solved:
 
 | No.        | Problem Number | Problem Name                                | Difficulty | Solution Link                       |
 |------------|----------------|---------------------------------------------|------------|-------------------------------------|
-| 1          |                |                                             |            |                                     |
+| 1          | 933            | Number of Recent C                          | Easy       | [Link]()                            |
 
 
 

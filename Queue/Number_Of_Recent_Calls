@@ -1,0 +1,24 @@
+class RecentCounter {
+public:
+    // Declare a queue to store the timestamps of recent pings
+    queue<int> queue;
+
+    // Constructor (no specific initialization is needed here)
+    RecentCounter() {
+    }
+    
+    // Method to handle the ping request
+    int ping(int t) {
+        // Remove pings that occurred more than 3000 milliseconds ago
+        // (i.e., pings that are older than t - 3000)
+        while (!queue.empty() && queue.front() < t - 3000) {
+            queue.pop();
+        }
+        
+        // Add the current ping timestamp to the queue
+        queue.push(t);
+
+        // Return the number of pings in the last 3000 milliseconds
+        return queue.size();
+    }
+};

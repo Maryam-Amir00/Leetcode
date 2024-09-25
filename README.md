@@ -83,6 +83,8 @@ Here is a list of the problems I've solved:
 | 6          | 856            | Score Of Parentheses                                     | Medium     | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Stack/Score_Of_Parenthesis)|
 | 7          | 2390           | Removing Stars From a String                             | Medium     | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Stack/Removing_Stars_From_a_string)|
 
+## Queue
+
 
 
 ## Contributing

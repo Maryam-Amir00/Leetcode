@@ -1,0 +1,45 @@
+class MyStack {
+public:
+
+    // Two queues used to simulate the behavior of a stack
+    queue<int> q1;
+    queue<int> q2;
+
+    // Constructor
+    MyStack() {}
+
+    // Push an element onto the stack
+    void push(int x) {
+        // Move all elements from q1 to q2 to prepare for pushing the new element
+        while(q1.empty() == false) {
+            q2.push(q1.front()); // Transfer elements from q1 to q2
+            q1.pop();             // Remove from q1
+        }
+        
+        // Push the new element into q1 (this will be at the front of the queue)
+        q1.push(x);
+        
+        // Move all elements back from q2 to q1
+        while(q2.empty() == false) {
+            q1.push(q2.front());  // Transfer elements from q2 back to q1
+            q2.pop();             // Remove from q2
+        }
+    }
+
+    // Remove the top element of the stack
+    int pop() {
+        int x = q1.front(); // Get the front element (top of stack)
+        q1.pop();           // Remove it from q1
+        return x;           // Return the popped element
+    }
+
+    // Get the top element of the stack
+    int top() {
+        return q1.front(); // The front of q1 is the top of the stack
+    }
+
+    // Check if the stack is empty
+    bool empty() {
+        return q1.empty(); // Stack is empty if q1 is empty
+    }
+};

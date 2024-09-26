@@ -89,6 +89,7 @@ Here is a list of the problems I've solved:
 |------------|----------------|---------------------------------------------|------------|-------------------------------------|
 | 1          | 933            | Number of Recent Calls                      | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Queue/Number_Of_Recent_Calls)                            |
 | 2          | 225            | Implement Stack using Queues                | Easy       | [Link]()|
+| 3          | 232            | Implement Queue using Stacks                | Easy       | [Link]()|
 
 
 

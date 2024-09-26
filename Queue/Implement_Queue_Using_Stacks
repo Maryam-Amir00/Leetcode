@@ -1,0 +1,45 @@
+class MyQueue {
+public:
+
+    // Two stacks to simulate the behavior of a queue
+    stack<int> s1;
+    stack<int> s2;
+
+    // Constructor
+    MyQueue() {}
+
+    // Push an element to the back of the queue
+    void push(int x) {
+        // Move all elements from s1 to s2 to reverse the order
+        while(s1.empty() == false) {
+            s2.push(s1.top()); // Transfer elements from s1 to s2
+            s1.pop();           // Remove from s1
+        }
+
+        // Push the new element into s2 (this will be at the bottom of the queue)
+        s2.push(x);
+
+        // Move everything back from s2 to s1 to restore the original order
+        while(s2.empty() == false) {
+            s1.push(s2.top());  // Transfer elements from s2 back to s1
+            s2.pop();           // Remove from s2
+        }
+    }
+
+    // Remove the front element of the queue
+    int pop() {
+        int x = s1.top(); // Get the top element (front of the queue)
+        s1.pop();         // Remove it from s1
+        return x;         // Return the removed element
+    }
+
+    // Get the front element of the queue
+    int peek() {
+        return s1.top(); // The top of s1 is the front of the queue
+    }
+
+    // Check if the queue is empty
+    bool empty() {
+        return s1.empty(); // Queue is empty if s1 is empty
+    }
+};

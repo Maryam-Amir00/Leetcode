@@ -92,6 +92,11 @@ Here is a list of the problems I've solved:
 | 3          | 232            | Implement Queue using Stacks                | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Queue/Implement_Queue_Using_Stacks)|
 
 
+## Binary Search
+
+| No.        | Problem Number | Problem Name                                | Difficulty | Solution Link                       |
+|------------|----------------|---------------------------------------------|------------|-------------------------------------|
+| 1          | 704            | Binary Search                               | Easy       | [Link]()|
 
 
 ## Contributing

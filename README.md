@@ -97,6 +97,7 @@ Here is a list of the problems I've solved:
 | No.        | Problem Number | Problem Name                                | Difficulty | Solution Link                       |
 |------------|----------------|---------------------------------------------|------------|-------------------------------------|
 | 1          | 704            | Binary Search                               | Easy       | [Link]()|
+| 2          | 69             | Sqrt(x)                                     | Easy       | [Link]()|
 
 
 ## Contributing

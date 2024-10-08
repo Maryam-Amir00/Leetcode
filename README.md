@@ -100,6 +100,12 @@ Here is a list of the problems I've solved:
 | 2          | 69             | Sqrt(x)                                     | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Binary_Search/sqrt(x))|
 
 
+## Sorting
+
+| No.        | Problem Number | Problem Name                                | Difficulty | Solution Link                       |
+|------------|----------------|---------------------------------------------|------------|-------------------------------------|
+
+
 ## Contributing
 
 Feel free to fork this repository, make your own improvements, and submit a pull request! Any constructive feedback is welcome.

@@ -1,0 +1,28 @@
+class Solution { 
+public:     
+    // Function to search for the target value in the sorted array 'nums'
+    int search(vector<int>& nums, int target) {         
+        int low = 0;  // Initialize the low index to the start of the array
+        int high = nums.size() - 1;  // Initialize the high index to the end of the array
+                 
+        // Continue searching while the low index is less than or equal to the high index
+        while (low <= high){           
+            int mid = (low + high) / 2;  // Calculate the middle index
+            
+            // Check if the middle element is the target
+            if(nums[mid] == target){             
+                return mid;  // Return the index if target is found
+            }
+            // If the middle element is greater than the target, search the left half
+            else if(nums[mid] > target){             
+                high = mid - 1;  // Move the high index to mid - 1
+            }
+            // If the middle element is less than the target, search the right half
+            else{             
+                low = mid + 1;  // Move the low index to mid + 1
+            }
+        }  
+        
+        return -1;  // Return -1 if the target is not found
+    } 
+};

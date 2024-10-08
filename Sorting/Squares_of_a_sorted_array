@@ -1,0 +1,30 @@
+class Solution {
+public:
+    // Function to return a sorted array of the squares of the elements of 'nums'
+    vector<int> sortedSquares(vector<int>& nums) {
+        vector<int> temp(nums.size());  // Create a new vector 'temp' to store the squares of 'nums'
+        
+        // First loop: square each element of 'nums' and store it in 'temp'
+        for(int i = 0; i < nums.size(); i++) {
+            temp[i] = nums[i] * nums[i];  // Store the square of each element
+        }
+
+        // Second loop: perform a selection sort on the squared elements
+        for(int j = 0; j < temp.size(); j++) {
+            int min = j;  // Assume the current element at 'j' is the minimum
+            
+            // Find the smallest element in the remaining unsorted part of the array
+            for(int k = j + 1; k < temp.size(); k++) {
+                if(temp[k] < temp[min]) {
+                    min = k;  // Update 'min' if a smaller element is found
+                }
+            }
+
+            // Swap the smallest element found with the current element at 'j'
+            swap(temp[min], temp[j]);
+        }
+
+        // Return the sorted array of squares
+        return temp;
+    }
+};

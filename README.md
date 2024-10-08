@@ -96,7 +96,7 @@ Here is a list of the problems I've solved:
 
 | No.        | Problem Number | Problem Name                                | Difficulty | Solution Link                       |
 |------------|----------------|---------------------------------------------|------------|-------------------------------------|
-| 1          | 704            | Binary Search                               | Easy       | [Link]()|
+| 1          | 704            | Binary Search                               | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Binary_Search/Binary_Search)|
 | 2          | 69             | Sqrt(x)                                     | Easy       | [Link]()|
 
 

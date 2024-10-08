@@ -105,7 +105,7 @@ Here is a list of the problems I've solved:
 | No.        | Problem Number | Problem Name                                | Difficulty | Solution Link                       |
 |------------|----------------|---------------------------------------------|------------|-------------------------------------|
 | 1          | 977            | Squares of a Sorted Array                   | Easy       | [Link]()|
-| 2          | 
+| 2          | 75             | Sort Colors                                 | Medium     | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Sorting/Sort_Colors)|
 
 
 ## Contributing

@@ -1,0 +1,34 @@
+class Solution {
+public:
+    int majorityElement(vector<int>& nums) {
+        int candidate = nums[0]; // Initial candidate
+        int count = 0; // Counter for the candidate
+
+        // First pass: find a potential candidate
+        for (int num : nums) {
+            if (count == 0) {
+                candidate = num; // Update the candidate when count is 0
+            }
+            if (num == candidate) {
+                count++; // Increment count if the current number is the candidate
+            } else {
+                count--; // Decrement count if the current number is not the candidate
+            }
+        }
+
+        // Second pass: verify the candidate
+        count = 0;
+        for (int num : nums) {
+            if (num == candidate) {
+                count++; // Count occurrences of the candidate
+            }
+        }
+
+        // Check if the candidate is the majority element
+        if (count > nums.size() / 2) {
+            return candidate; // Return the candidate if it is the majority
+        }
+
+        return -1; // Return -1 or throw an error if no majority element exists
+    }
+};

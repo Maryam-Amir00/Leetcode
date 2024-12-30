@@ -47,6 +47,7 @@ Here is a list of the problems I've solved:
 | 14         | 2090           | K Radius Subarray Averages                               | Medium     | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Arrays/K_Radius_Subarray_Averages)|
 | 15         | 283            | Move Zeroes                                              | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Arrays/Move_Zeroes)|
 | 16         | 169            | Majority Elements                                        | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Arrays/Majority_Elements)|
+| 17         | 392            | Is Subsequence                                           | Easy       | [Link]()|
 
 ## Linked List
 

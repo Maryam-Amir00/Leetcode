@@ -1,0 +1,30 @@
+class Solution {
+public:
+    // Function to check if string s is a subsequence of string t
+    bool isSubsequence(string s, string t) {
+        // i will track the current position in string s
+        int i = 0;
+        // j will track the current position in string t
+        int j = 0;
+
+        // Continue to examine characters in string t until the end
+        while (j < t.length()){
+            // Check if the current character in s matches the current character in t
+            if(s[i] == t[j]){
+                // If they match, move to the next character in s
+                i++;
+            }
+            // Always move to the next character in t
+            j++;
+        }
+
+        // After the loop, check if we have gone through all characters in s
+        if (i == s.length()){
+            // If we have, s is a subsequence of t
+            return true;
+        }
+
+        // If not all characters in s were found in t in sequence, return false
+        return false;
+    }
+};

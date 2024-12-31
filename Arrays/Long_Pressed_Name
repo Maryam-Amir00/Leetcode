@@ -1,0 +1,19 @@
+class Solution {
+public:
+    bool isLongPressedName(string name, string typed) {
+        int i = 0, j = 0; // Pointers for name and typed
+        while (j < typed.length()) {
+            if (i < name.length() && name[i] == typed[j]) {
+                // When characters match, move to the next character in name
+                i++;
+            } else if (j == 0 || typed[j] != typed[j - 1]) {
+                // If no match and it's not a repeat of the previous character, return false
+                return false;
+            }
+            // Always move to the next character in typed
+            j++;
+        }
+        // Return true only if all characters in name are matched
+        return i == name.length();
+    }
+};

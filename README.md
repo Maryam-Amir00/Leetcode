@@ -48,7 +48,7 @@ Here is a list of the problems I've solved:
 | 15         | 283            | Move Zeroes                                              | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Arrays/Move_Zeroes)|
 | 16         | 169            | Majority Elements                                        | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Arrays/Majority_Elements)|
 | 17         | 392            | Is Subsequence                                           | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Arrays/Is_Subsequence)|
-| 18         | 925            | Long Pressed Name                                        | Easy       | [Link]()|
+| 18         | 925            | Long Pressed Name                                        | Easy       | [Link](https://github.com/Maryam-Amir00/Leetcode/blob/main/Arrays/Long_Pressed_Name)|
 
 ## Linked List
 
